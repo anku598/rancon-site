@@ -23,7 +23,7 @@ header {
   margin: 0 auto;
   margin-top: 15px;
   margin-bottom: 15px;
-  height: 94vh;
+  height: 100vh;
   position: relative; }
   header .scroll {
     display: flex;
@@ -66,28 +66,63 @@ header {
     background-image: url("../img/theedge-day.jpg"); } }
 .nav-container {
   display: flex;
-  justify-content: space-between; }
-  .nav-container .navbar nav {
-    color: #fff;
-    font-size: 20px;
-    text-align: center; }
-    .nav-container .navbar nav .nav-ul {
-      display: flex;
-      list-style: none;
-      margin: 0;
-      padding: 0; }
-      .nav-container .navbar nav .nav-ul li {
-        width: 200px; }
-        .nav-container .navbar nav .nav-ul li a {
-          text-decoration: none; }
-        .nav-container .navbar nav .nav-ul li .dropdown {
-          list-style: none;
-          margin: 0;
-          padding: 0; }
-          .nav-container .navbar nav .nav-ul li .dropdown li {
-            width: 200px; }
-            .nav-container .navbar nav .nav-ul li .dropdown li a {
-              text-decoration: none; }
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  align-items: center;
+  flex-direction: column; }
+  .nav-container .logo {
+    background: #fff;
+    width: 226px;
+    min-width: 130px;
+    height: 67px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .nav-container .navbar nav .nav-ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .nav-container .navbar nav .nav-ul li {
+      min-width: 13vmax;
+      color: #fff;
+      font-size: 1rem;
+      text-align: center;
+      line-height: 40px;
+      height: 40px;
+      letter-spacing: 1px;
+      transition: 2s; }
+      .nav-container .navbar nav .nav-ul li:hover .dropdown li {
+        display: block; }
+      .nav-container .navbar nav .nav-ul li a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        text-transform: uppercase; }
+      .nav-container .navbar nav .nav-ul li .dropdown {
+        list-style: none;
+        margin: 0;
+        padding: 0; }
+        .nav-container .navbar nav .nav-ul li .dropdown li {
+          width: 200px;
+          color: #fff;
+          font-size: 1rem;
+          text-align: center;
+          line-height: 40px;
+          display: none;
+          height: 40px;
+          transition: all 1s;
+          background: rgba(0, 0, 0, 0.7);
+          letter-spacing: 2px;
+          transition: 1s;
+          padding: 8px 0; }
+          .nav-container .navbar nav .nav-ul li .dropdown li:hover {
+            background: #AB7D36; }
+          .nav-container .navbar nav .nav-ul li .dropdown li a {
+            text-decoration: none;
+            text-transform: uppercase; }
 
 /*** Section Two Css Here***/
 .section-two {
